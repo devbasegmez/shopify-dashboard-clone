@@ -1,0 +1,109 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,body {
+    font-family: "Inter", sans-serif;
+}
+
+.before-gradient-border-search,
+.before-gradient-border {
+    position: relative;
+    border: solid .0625rem #1a1a1a;
+}
+
+.before-gradient-border:hover {
+    background-color: rgba(0, 0, 0, 0);
+    background: linear-gradient(to bottom, rgba(255, 255, 255, .17), rgba(255, 255, 255, .04));
+    border: solid .0625rem #383838;
+    border-radius: .75rem;
+}
+.before-gradient-border-search {
+    background-color: rgba(0, 0, 0, 0);
+    background: linear-gradient(to bottom, rgba(255, 255, 255, .17), rgba(255, 255, 255, .04));
+    border: solid .0625rem #383838;
+    border-radius: .75rem;
+}
+.before-gradient-border-search:hover {
+    background-color: #000;
+}
+
+@media(max-width: 1280px) {
+    .navbar-item {
+        position: absolute;
+        top:56px;
+        left: 0;
+        margin-left:-240px;
+        transition: margin-left .4s;
+        z-index: 99999999;
+    }
+    .overlay {
+        width: 100%;
+        height: 100%;
+        background-color: rgb(0,0,0,.4);
+        position: fixed;
+        top:56px;
+        left:0;
+        display: none;
+    }
+}
+
+.custom-btn {
+    box-shadow: 0rem -.0625rem 0rem .0625rem rgba(0, 0, 0, .8) inset, 0rem 0rem 0rem .0625rem rgba(48, 48, 48, 1) inset, 0rem .03125rem 0rem .09375rem rgba(255, 255, 255, .25) inset;
+}
+
+.custom-btn-light {
+    box-shadow: 0rem -.0625rem 0rem .0625rem #f1f1f1 inset, 0rem 0rem 0rem .0625rem #ccc inset, 0rem .03125rem 0rem .09375rem rgba(255, 255, 255, .5) inset;
+}
+
+.dropdown-items a:before {
+    content:'';
+    position: absolute;
+    top:0;
+    left:5px;
+    width: 21px;
+    height: 28px;
+    background-image: url('../images/arrow-right-hover.svg');
+    display: none;
+}
+.dropdown-items a:hover:before {
+    display: block;
+}
+
+.dropdown-items:after {
+    content:'';
+    position: absolute;
+    top:-24px;
+    left:5px;
+    width: 21px;
+    height: 28px;
+    background-image: url('../images/line-sm.svg');
+}
+
+.dropdown-items a.active:after {
+    content:'';
+    position: absolute;
+    top:0;
+    left:5px;
+    width: 21px;
+    height: 28px;
+    background-image: url('../images/arrow-right.svg');
+    display: block;
+}
+.dropdown-items a.siblings:after {
+    content:'';
+    position: absolute;
+    top:0;
+    left:5px;
+    width: 21px;
+    height: 28px;
+    background-image: url('../images/line.svg');
+    display: block;
+}
+
+.content {
+    height: calc(100vh - 56px);
+}
+.navbar-item {
+    height: calc(100vh - 56px);
+}
