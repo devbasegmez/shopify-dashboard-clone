@@ -14,9 +14,6 @@
                         <p class="text-[12px] text-[#333]">Use this personalized guide to get your store up and running.</p>
                         <div class="max-w-max inline-flex items-center px-2 py-0.5 rounded-lg border-[1px] border-[#e3e3e3] text-[12px]">0 / 8 completed</div>
                     </div>
-                    <a href="#" alt="" title="" class="flex items-center p-1.5 bg-[#FFF] transition hover:bg-general rounded-lg">
-                        <svg viewBox="0 0 20 20" class="w-[20px] h-[20px]" fill="#8a8a8a" focusable="false" aria-hidden="true"><path fill-rule="evenodd" d="M5.72 8.47a.75.75 0 0 1 1.06 0l3.47 3.47 3.47-3.47a.75.75 0 1 1 1.06 1.06l-4 4a.75.75 0 0 1-1.06 0l-4-4a.75.75 0 0 1 0-1.06Z"></path></svg>
-                    </a>
                 </div>
                 <div id="accordion-color" data-accordion="collapse" data-active-classes="">
                     <h2 id="accordion-color-heading-1">
